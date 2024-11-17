@@ -31,6 +31,15 @@
             margin: 0;
             z-index: 1;
         }
+
+        .sub-title {
+            font-size: 2.5em; /* Slightly smaller than the main title */
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+            z-index: 1;
+        }
+
         header::before {
             content: "";
             position: absolute;
@@ -41,6 +50,30 @@
             background-color: rgba(255, 255, 255, 0.5); /* Light overlay to make text stand out */
             z-index: 0;
         }
+
+        section h2 {
+            font-size: 2.5em; /* Make the title larger */
+            font-weight: bold; /* Emphasize the title */
+            color: #333; /* Dark color for good contrast */
+            margin-bottom: 20px; /* Space between title and content */
+            text-align: center; /* Center align the title */
+        }
+
+        section p {
+            font-size: 1.2em; /* Larger text for better readability */
+            line-height: 1.6; /* Increased line height for easier reading */
+            margin-bottom: 20px; /* Space between paragraphs */
+        }
+
+        section p strong {
+            font-weight: bold; /* Emphasize key phrases */
+        }
+
+        section p strong[style] {
+            font-weight: bold; /* Keep the speakers' names bold */
+            color: #0056b3; /* Custom color for the speakers' names */
+        }
+
         section {
             padding: 20px;
             margin: 10px;
@@ -48,6 +81,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         footer {
             text-align: center;
             padding: 10px 0;
@@ -57,10 +91,12 @@
             bottom: 0;
             width: 100%;
         }
+
         a {
             color: #007bff;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -70,6 +106,10 @@
 
 <header>
     <h1>Encounters in Econometric Theory</h1>
+    <div class="sub-title">
+        <p><strong>Date:</strong> 14 - 15th May 2025</p>
+        <p><strong>Location:</strong> PSE (Paris School of Economics)</p>
+    </div>
 </header>
 
 <section>
@@ -92,9 +132,9 @@
     
 <section>
     <h2>Motivation</h2>
-    <p>The "Encounters in Econometric Theory" workshop aims to unite young econometricians across Europe, fostering a collaborative environment to discuss and share their research passions. Following the success of our previous editions at Nuffield College, this year marks a significant evolution as we host the event outside its traditional setting at PSE!</p>
+    <p>The "<strong>Encounters in Econometric Theory</strong>" workshop aims to unite young econometricians across Europe, fostering a collaborative environment to discuss and share their research passions. Following the success of our previous editions at Nuffield College, this year marks a significant evolution as we host the event outside its traditional setting at PSE!</p>
     <p>Our goal is to create an intimate space where we can engage with one another, exploring theoretical econometrics and the challenges that inspire us. The positive feedback from our past encounters highlights a strong desire for such interactions, which we believe are vital for establishing lasting professional relationships early in one's academic career.</p>
-    <p>This year you will also have the great pleasure and honour of listening to our two keynote speakers: <b>Clément De Chaisemartin </b> (Sciences-Po) and  <b> Martin Weidner </b> (Oxford)! </p>
+    <p>This year you will also have the great pleasure and honour of listening to our two keynote speakers: <strong style="color:#0056b3;">Clément De Chaisemartin</strong> (Sciences-Po) and <strong style="color:#0056b3;">Martin Weidner</strong> (Oxford)!</p>
 </section>
     
 <section>
