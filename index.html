@@ -12,21 +12,34 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            background-image: url('https://example.com/econometrics-background.jpg'); /* Replace with actual image URL */
-            background-size: cover;
-            background-position: center;
         }
         header {
-            background-color: rgba(0, 123, 255, 0.8);
-            color: white;
-            padding: 20px 0;
+            background-image: url('image_EET.jpg'); /* Use the image as the background */
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Adjust the height to fit the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            border-bottom: 5px solid #0056b3;
+            position: relative;
         }
         h1 {
-            font-size: 2.5em; /* Larger title */
+            font-size: 4em; /* Larger title */
             font-family: 'Georgia', serif; /* Nicer font for title */
+            color: black;
             margin: 0;
+            z-index: 1;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Light overlay to make text stand out */
+            z-index: 0;
         }
         section {
             padding: 20px;
@@ -57,7 +70,6 @@
 
 <header>
     <h1>Encounters in Econometric Theory</h1>
-    <p>Join us to learn about the latest econometric challenges from young researchers!</p>
 </header>
 
 <section>
@@ -90,7 +102,6 @@
     <p>We invite submissions of papers for presentation at the conference. Please submit your paper using the following link:</p>
     <p><a href="https://forms.office.com/r/9DXr2HhcLs">Submit your paper here</a></p>
 </section>
-
 
 <section>
     <h2>Contact Information</h2>
